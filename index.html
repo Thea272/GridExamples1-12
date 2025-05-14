@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples of Grid</title>
+    <link rel="stylesheet" href="./css/grid.css">
+
+</head>
+<header id="title">
+    <h1>Los Ejemplos de Grid</h1>
+</header>
+
+<body>
+    <!-- -Example 1 ------------->
+    <section id="uno">
+        <h2>Example 1</h2>
+        <p> 1. To define a Grid use display:grid or display:inline-grid on the parent element. You can then create a
+            grid
+            using the grid-template-columns and grid-template-rows properties.
+
+            I am using the grid-gap property to create a gap between my columns and rows of 10px. This property is a
+            shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
+
+            All direct children of the parent now become grid items and the auto-placement algorithm lays them out, one
+            in each grid cell. Creating extra rows as needed.</p>
+
+
+        <p> 1. Para definir una cuadrícula, utiliza display:grid o display:inline-grid en el elemento padre. Luego,
+            puedes
+            crear una cuadrícula usando las propiedades grid-template-columns y grid-template-rows.Estoy utilizando la
+            propiedad grid-gap para crear un espacio entre mis columnas y filas de 10px. Esta propiedad es una forma
+            abreviada de grid-column-gap y grid-row-gap, por lo que puedes establecer estos valores
+            individualmente.Todos los hijos directos del padre ahora se convierten en elementos de la cuadrícula y el
+            algoritmo de colocación automática los distribuye, uno en cada celda de la cuadrícula, creando filas
+            adicionales según sea necesario.</p>
+
+        <div class="wrapper1">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </section>
+    <!---------------------- section2 -->
+    <section id="dos">
+        <h2>Example 2</h2>
+        <p>2. Line-based placement
+            Using the Grid I defined in example 1, I am positioning the elements in my markup (six divs with a class of
+            box and classes from a to f) using line-based placement properties. This example is more verbose than it
+            needs to be as a demonstration of the properties. In reality if an item will only span one grid track you
+            may omit the -end value.</p>
+        <p>2. Colocación basada en líneas Usando la cuadrícula que definí en el ejemplo 1, estoy posicionando los
+            elementos en mi marcado (seis divs con una clase de caja y clases de la a la f) utilizando propiedades de
+            colocación basada en líneas. Este ejemplo es más verboso de lo que necesita ser como demostración de las
+            propiedades. En realidad, si un elemento solo ocupará una pista de cuadrícula, puede omitir el valor -end.
+        </p>
+        <div class="wrapper2">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </section>
+
+    <!------ Example 3 ------------------>
+    <section id="tres">
+        <h2>Example 3</h2>
+        <p>3. Line-based placement shorthand - grid-row and grid-column
+            We can achieve the same result as in example 2 using a shorthand syntax declaring the start and end values
+            at once. Values are separated with a / and again it would be valid to omit the / and the end value as we are
+            spanning only one track.</p>
+        <p>3. Atajo de colocación basado en líneas - grid-row y grid-column. Podemos lograr el mismo resultado que en el
+            ejemplo 2 utilizando una sintaxis abreviada que declara los valores de inicio y fin a la vez. Los valores
+            están separados por una / y de nuevo sería válido omitir la / y el valor final ya que solo estamos abarcando
+            una pista.</p>
+        <div class="wrapper3">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </section>
+
+    <!-- example 4 -------------->
+    <section id="cuatro">
+        <h2>Example 4</h2>
+        <p>4. Line-based placement shorthand - grid-area
+            We can achieve the same result as in example 2 and 3 declaring all four values with the grid-area property.
+            Again values are separated with a /. The order of the values is row-start/column-start/row-end/column-end.
+        </p>
+        <p>4. Abreviatura de colocación basada en líneas - área de cuadrícula. Podemos lograr el mismo resultado que en
+            el ejemplo 2 y 3 declarando los cuatro valores con la propiedad grid-area. Nuevamente, los valores están
+            separados por una /. El orden de los valores es inicio-fila/inicio-columna/final-fila/final-columna.</p>
+
+        <div class="wrapper4">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </section>
+
+    <!-- example 5 -->
+    <section id="cinco">
+        <h2>Example 5</h2>
+        <p>5. Line-based placement spanning tracks
+            To create Grid Areas that are larger than a single grid track we specify an end line that is more than one
+            track away. Here I am using the grid-column and grid-row shorthand and have omitted the end value for any
+            items that
+            span one row or column track. </p>
+        <p>5. Colocación basada en líneas que abarca pistas. Para crear áreas de cuadrícula que sean más grandes que una
+            sola pista de cuadrícula, especificamos una línea de fin que está a más de una pista de distancia. Aquí
+            estoy usando la notación abreviada de grid-column y grid-row y he omitido el valor de fin para cualquier
+            elemento que abarque una fila o columna.</p>
+
+        <div class="wrapper5">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+        </div>
+
+    </section>
+
+    <!-- example 6 ----------->
+    <section id="seis">
+        <h2>Example 6</h2>
+        <p>6. Line-based placement spanning tracks with the span keyword
+            We can also span using the span keyword. This example creates the same layout as the one in example 5. I am
+            using the span keyword rather than targeting the Grid Line by number. I am also using the defaults for row
+            and column end, which is to span 1.</p>
+        <p>6. Ubicación basada en líneas que abarca pistas con la palabra clave span. También podemos abarcar usando la
+            palabra clave span. Este ejemplo crea el mismo diseño que el del ejemplo 5. Estoy usando la palabra clave
+            span en lugar de dirigirme a la Línea de la Cuadrícula por número. También estoy usando los valores por
+            defecto para el fin de fila y columna, que es abarcar 1.</p>
+
+        <div class="wrapper6">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+        </div>
+    </section>
+
+    <!-- example 7 -->
+
+    <section id="siete">
+        <h2>Example 7</h2>
+        <p>7. Line-based placement named lines
+            We can name lines rather than targeting them by number. Name the line inside brackets. In the code below you
+            can see that I name the very first column line col1-start then comes the 100 pixel first column track.
+            Having named the lines you can use the names, rather than numbers. You always have the line numbers
+            to use - even if you name some or all of your lines.</p>
+        <p>7. Ubicación basada en líneas llamadas líneasPodemos nombrar líneas en lugar de dirigirnos a ellas por
+            número. Nombra la línea dentro de los corchetes. En el código a continuación, puedes ver que nombro la línea
+            de la primera columna como col1-start y luego viene la pista de la primera columna de 100 píxeles. Habiendo
+            nombrado las líneas, puedes usar los nombres, en lugar de números.Siempre tienes los números de línea para
+            usar, incluso si nombras algunas o todas tus líneas.</p>
+
+        <div class="wrapper7">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+        </div>
+
+
+    </section>
+    <!-- example 8 ------------------->
+    <section id="ocho">
+        <h2>Example 8</h2>
+        <p>8. Line-based placement named lines with spans
+            You can give lines the same name and then use the span keyword to target lines of a certain name. This is
+            really useful if you want to create a complex grid with multiple content tracks and gutters.I have made a
+            slightly
+            larger grid here and have named all of the Grid Lines before the content tracks with
+            col and all of the lines before the row tracks with row. I can then start at a certain column line by using
+            col <line number> and span by saying span <number of lines>.</p>
+        <p>8. Ubicación basada en líneas con tramosPuedes dar a las líneas el mismo nombre y luego usar la palabra clave
+            span para dirigirte a líneas de un nombre determinado. Esto es realmente útil si deseas crear una cuadrícula
+            compleja con múltiples pistas de contenido y espacios.He hecho una cuadrícula un poco más grande aquí y he
+            nombrado todas las Líneas de la Cuadrícula antes de las pistas de contenido con col y todas las líneas antes
+            de las pistas de fila con row. Luego puedo comenzar en una línea de columna determinada usando col <número
+                de línea> y ampliar diciendo span <número de líneas>.</p>
+
+        <div class="wrapper8">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+        </div>
+
+    </section>
+
+    <!-- example 9 -->
+    <section id="nueve">
+        <h2>Example 9</h2>
+        <p>9. Using repeat notation
+            In example 8 we repeated the same definitions to create our grid with named lines. We could save some typing
+            by using repeat notation. The values for repeat are the number of times you want the expression to repeat
+            and then the expression.</p>
+        <p>9. Uso de la notación de repetición En el ejemplo 8 repetimos las mismas definiciones para crear nuestra
+            cuadrícula con líneas nombradas. Podríamos ahorrar algo de escritura usando la notación de repetición. Los
+            valores para repetir son el número de veces que deseas que la expresión se repita y luego la expresión.</p>
+
+        <div class="wrapper9">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+        </div>
+    </section>
+    <!-- example 10 ----->
+    <section id="diez">
+        <h2>Example 10</h2>
+        <p> 10. Explicit and Implicit Grid
+            When we use grid-template-columns and grid-template-rows we create an Explicit Grid. However if we try and
+            place an item outside of that grid the browser will create an Implicit Grid line or lines in order to hold
+            that item. In the code below I have put e between grid column lines 4 and 5, these are not described with
+            grid-template-rows, so an implicit grid line 5 is created. By default the implicit grid tracks created by
+            the implicit lines will be auto sized. However, you can size the tracks with the grid-auto-columns and
+            grid-auto-rows properties. I have sized my auto tracks as 100px to
+            match the rest of the column tracks in my grid.
+        </p>
+        <p>10. Cuadrícula Explícita e Implícita Cuando utilizamos grid-template-columns y grid-template-rows, creamos
+            una cuadrícula explícita. Sin embargo, si intentamos colocar un ítem fuera de esa cuadrícula, el navegador
+            creará una línea de cuadrícula implícita o líneas para mantener ese ítem. En el código a continuación, he
+            puesto 'e' entre las líneas de columna 4 y 5, las cuales no están descritas con grid-template-rows, así que
+            se crea una línea de cuadrícula implícita 5. Por defecto, las pistas de cuadrícula implícitas creadas por
+            las líneas implícitas tendrán un tamaño automático. Sin embargo, puedes dimensionar las pistas con las
+            propiedades grid-auto-columns y grid-auto-rows. He dimensionado mis pistas automáticas a 100px para que
+            coincidan con el resto de las pistas de columna en mi cuadrícula.</p>
+
+        <div class="wrapper10">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+        </div>
+    </section>
+    <!-- exemple 11 --------->
+    <section id="once">
+        <h2>Example</h2>
+        <p>11. Defining Grid Areas
+            We can create named areas on the grid to put content into. To do this we first assign elements in our markup
+            to a Grid Area, using the grid-area property. We can then use the grid-template-areas property to describe
+            where on the Grid these elements should sit.
+            Repeating the name of an area indicates that the area spans that grid track. Using a . or a sequence like
+            .... indicates an empty track. Such as the very first cell on this grid.</p>
+        <p>11. Definiendo Áreas de la CuadrículaPodemos crear áreas nombradas en la cuadrícula para colocar contenido.
+            Para hacer esto, primero asignamos elementos en nuestro marcado a un Área de la Cuadrícula, utilizando la
+            propiedad grid-area.Luego podemos usar la propiedad grid-template-areas para describir dónde en la
+            cuadrícula deben estar estos elementos.Repetir el nombre de un área indica que el área abarca esa pista de
+            cuadrícula. Usar un punto (.) o una secuencia como .... indica una pista vacía. Tal como la primera celda de
+            esta cuadrícula.</p>
+
+        <div class="wrapper11">
+            <div class="box header">Header</div>
+            <div class="box sidebar">Sidebar</div>
+            <div class="box content">Content</div>
+        </div>
+    </section>
+
+    <!-- ----example 12--- -->
+    <section id="doce">
+        <h2>Example 12</h2>
+        <p>12. No clearing required
+            If I add a footer to my markup and define a grid-area and place it on the grid using grid-template-areas you
+            can see that it sits below the content column. There is no clearing required as this footer has a track on
+            the grid, it can't hop up into another track.
+            This example also shows the issue described in example 5, by default the background on the sidebar should
+            stretch to full height, in a similar way to the defaults for Flexbox.</p>
+        <p>12. No se requiere limpiezaSi agrego un pie de página a mi marcado y defino un área de cuadrícula y la coloco
+            en la cuadrícula utilizando grid-template-areas, puedes ver que se sitúa debajo de la columna de contenido.
+            No se requiere limpieza ya que este pie de página tiene una pista en la cuadrícula, no puede saltar a otra
+            pista.Este ejemplo también muestra el problema descrito en el ejemplo 5, por defecto el fondo en la barra
+            lateral debería extenderse hasta la altura completa, de manera similar a los valores predeterminados para
+            Flexbox.</p>
+
+        <div class="wrapper12">
+            <div class="box header">Header</div>
+            <div class="box sidebar">Sidebar</div>
+            <div class="box content">Content
+                <br /> More content than we had before so this column is now quite tall.
+            </div>
+            <div class="box footer">Footer</div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
